@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full {
+    background-color: #7d00ff;
+    border: 1px;
+    color: #fff;
+}
+
+.btn-full:hover {
+    background-color: #5d2896;
+}
+
+.btn-ghost:hover { 
+    background-color: #7d00ff;
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.btn-ghost {
+    border: 1px solid #7d00ff;
+    color: #7d00ff;
+    filter: brightness(125%); 
+}
+
+.logo {
+    height: 210px;
+    width: auto;
+    float: left;
+    transform: rotate(-11deg);
+    margin-top: 20px;
+}
+
+.logo-sticky { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px; 
+}
+
+.main-nav { 
+    float: right;
+    list-style: none;
+    margin-top: 100px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover {
+    border-bottom: 2px solid #7d00ff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.805);
+    box-shadow: 0 0.5px 1px #fff;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a {
+    padding: 7px 0;
+    color: white;
+}
+
+.sticky .main-nav { margin-top: 16px;}
+
+.sticky .logo { display: none; }
+.sticky .logo-sticky { display: block; }
+
+.avka {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    display:block;
+    margin: 25px auto 19px auto;
+}
+
+.kek:after {
+    display: block;
+    height: 2px;
+    background-color: #7d00ff;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box {
+    padding: 1%
+}
+
+.icon-big { 
+    font-size: 350%;
+    display: block;
+    color: #7d00ff;
+    margin-bottom: 10px;
+}
+
+.foto-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.foto-showcase li {
+    display: block;
+    float: left;
+    width: 50%
+}
+
+.video-foto {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.video-foto img {
+    opacity: 0.7;
+    width: 100%;
+    height: 450px;
+    transform: scale(1.10);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-foto {
+    padding: 0;
+}
+
+.video-foto img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+
+.can {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display:block;
+    margin: 25px auto 19px auto;
+}
+
+.clients {
+    background-color: rgb(224, 221, 221);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) ,url(img/logo2\ \(1\).svg);
+    background-attachment: fixed;
+    
+}
+
+.clients h2,
+.clients h3,
+.clients p {
+    color: #fff
+}
+
+
+.kekich:after {
+    display: block;
+    height: 2px;
+    background-color: #7d00ff;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.yout {
+    color: #ff0000;
+}
+
+.jora {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+.zavi {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) ,url(img/phone.jpeg);
+    background-size: cover;
+    color: #fff;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -8px;
+}
+
+.ura:after {
+    display: block;
+    height: 2px;
+    background-color: #7d00ff;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+footer { 
+    background-color: #333;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+.js--wp-1.animated {
+    opacity: 1;
+}
+
+.js--wp-2 {
+    opacity: 0;
+}
+.js--wp-2.animated {
+    opacity: 1;
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: white;
+}
+
+
+.contacts p {
+    text-align: center;
+}
+
+.jopa {
+        font-size: 550%;
+        display: block;
+        color: #7d00ff;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto 
+}
+
+.contacts {
+    background-color: rgb(240, 240, 240);
+}

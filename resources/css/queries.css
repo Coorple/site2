@@ -1,0 +1,61 @@
+@media only screen and (max-width: 480px) {
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .main-nav { display: none } 
+
+  .mobile-nav-icon { display: inline-block; }
+
+  .main-nav {
+      float: left;
+      margin-top: 35px;
+      margin-left: 25px;
+  }
+
+  .main-nav li {
+      display: block;
+  }
+
+  .main-nav li a {
+      display: block;
+      border: 0;
+      padding: 10px 0;
+      font-size: 100%
+  }
+
+   .sticky .main-nav li a {
+    padding: 5px 0;
+   }   
+
+   .sticky .main-nav { margin-top: 10px;}
+
+}
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section {padding: 60px 0;}
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .logo {
+        width: 19%;
+        height: 19%;
+        float: left;
+        transform: rotate(-11deg);        
+    }
+
+    .row { padding: 0 2%; }
+}
