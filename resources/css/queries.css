@@ -8,6 +8,11 @@
 
   .mobile-nav-icon { display: inline-block; }
 
+    .foto-showcase li {
+        float: none;
+        width: 100%;
+    }
+    
   .main-nav {
       float: left;
       margin-top: 35px;
